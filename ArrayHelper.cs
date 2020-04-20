@@ -4,6 +4,7 @@ using System.Linq;
 
 namespace Day_13
 {
+    //asdasda
     public static class ArrayHelper<T>
     {
         ///<summary>
