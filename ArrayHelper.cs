@@ -26,5 +26,20 @@ namespace Day_13
             else
                 return default(T);
         }
+        
 
+        ///<summary>
+        ///Добавляет элемент с конца массива и возвращает обновленную длину массива
+        ///</summary>
+        public static int Push(ref T[] array, T element)
+        {
+            if(array != null)
+            {
+                Array.Resize(ref array, array.Length + 1);
+                array[array.Length - 1] = element;
+            }
+            return array.Length;
+        }
+
+        
         
